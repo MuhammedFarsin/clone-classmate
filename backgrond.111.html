@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://engeniusam.github.io/Eduford-University-Website/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Muchiri Samuel">
+      <meta name="description" content="Simple multipage website">
+      <meta name="keywords" content="eduford,campus">
+      <link rel="stylesheet" href="./backgrond.111_files/style.css">
+  <title>Eduford University Website</title>
+<link href="./backgrond.111_files/css2" rel="stylesheet">
+<link href="./backgrond.111_files/boxicons.min.css" rel="stylesheet">
+<script src="./backgrond.111_files/darkmode-js.min.js.download"></script>
+<script src="./backgrond.111_files/jquery-3.6.0.min.js.download" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="data:text/css;charset=UTF-8,%0A%20%20%20%20%20%20.darkmode-layer%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%200.5s%20ease%3B%0A%20%20%20%20%20%20%20%20mix-blend-mode%3A%20difference%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--button%20%7B%0A%20%20%20%20%20%20%20%20width%3A%202.9rem%3B%0A%20%20%20%20%20%20%20%20height%3A%202.9rem%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20right%3A%20unset%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2064px%3B%0A%20%20%20%20%20%20%20%20left%3A%2032px%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--simple%20%7B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20transform%3A%20scale(1)%20!important%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--expanded%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20scale(100)%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%200%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--no-transition%20%7B%0A%20%20%20%20%20%20%20%20transition%3A%20none%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23100f2c%3B%0A%20%20%20%20%20%20%20%20width%3A%203rem%3B%0A%20%20%20%20%20%20%20%20height%3A%203rem%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20border%3Anone%3B%0A%20%20%20%20%20%20%20%20right%3A%20unset%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2064px%3B%0A%20%20%20%20%20%20%20%20left%3A%2032px%3B%0A%20%20%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%200.5s%20ease%3B%0A%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle--white%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle--inactive%20%7B%0A%20%20%20%20%20%20%20%20display%3A%20none%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-background%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%20%20%20%20z-index%3A%20-10%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20img%2C%20.darkmode-ignore%20%7B%0A%20%20%20%20%20%20%20%20isolation%3A%20isolate%3B%0A%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%40media%20screen%20and%20(-ms-high-contrast%3A%20active)%2C%20(-ms-high-contrast%3A%20none)%20%7B%0A%20%20%20%20%20%20%20%20.darkmode-toggle%20%7Bdisplay%3A%20none%20!important%7D%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%40supports%20(-ms-ime-align%3Aauto)%2C%20(-ms-accelerator%3Atrue)%20%7B%0A%20%20%20%20%20%20%20%20.darkmode-toggle%20%7Bdisplay%3A%20none%20!important%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20"><link rel="stylesheet" type="text/css" href="data:text/css;charset=UTF-8,%0A%20%20%20%20%20%20.darkmode-layer%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%200.3s%20ease%3B%0A%20%20%20%20%20%20%20%20mix-blend-mode%3A%20difference%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--button%20%7B%0A%20%20%20%20%20%20%20%20width%3A%202.9rem%3B%0A%20%20%20%20%20%20%20%20height%3A%202.9rem%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20right%3A%2032px%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2032px%3B%0A%20%20%20%20%20%20%20%20left%3A%20unset%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--simple%20%7B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20transform%3A%20scale(1)%20!important%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--expanded%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20scale(100)%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%200%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--no-transition%20%7B%0A%20%20%20%20%20%20%20%20transition%3A%20none%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23100f2c%3B%0A%20%20%20%20%20%20%20%20width%3A%203rem%3B%0A%20%20%20%20%20%20%20%20height%3A%203rem%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20border%3Anone%3B%0A%20%20%20%20%20%20%20%20right%3A%2032px%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2032px%3B%0A%20%20%20%20%20%20%20%20left%3A%20unset%3B%0A%20%20%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%200.5s%20ease%3B%0A%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle--white%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle--inactive%20%7B%0A%20%20%20%20%20%20%20%20display%3A%20none%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-background%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%20%20%20%20z-index%3A%20-10%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20img%2C%20.darkmode-ignore%20%7B%0A%20%20%20%20%20%20%20%20isolation%3A%20isolate%3B%0A%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%40media%20screen%20and%20(-ms-high-contrast%3A%20active)%2C%20(-ms-high-contrast%3A%20none)%20%7B%0A%20%20%20%20%20%20%20%20.darkmode-toggle%20%7Bdisplay%3A%20none%20!important%7D%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%40supports%20(-ms-ime-align%3Aauto)%2C%20(-ms-accelerator%3Atrue)%20%7B%0A%20%20%20%20%20%20%20%20.darkmode-toggle%20%7Bdisplay%3A%20none%20!important%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20"></head>
+<body class="darkmode--activated"><div class="darkmode-background"></div><div class="darkmode-layer darkmode-layer--expanded darkmode-layer--simple darkmode-layer--no-transition darkmode-layer--button"></div><button class="darkmode-toggle--white darkmode-toggle" aria-label="Activate dark mode" aria-checked="false" role="checkbox"></button><div class="darkmode-background"></div><div class="darkmode-layer darkmode-layer--expanded darkmode-layer--simple darkmode-layer--no-transition darkmode-layer--button"></div><button class="darkmode-toggle--white darkmode-toggle" aria-label="Activate dark mode" aria-checked="false" role="checkbox">🌓</button>
+  <!-----Header section-->
+  <section id="header">
+    <div class="wrapper1">
+      <nav>
+        <img src="./backgrond.111_files/logo.png" alt="eduford logo">
+        <ul>
+          <i class="bx bx-window-close" onclick="hideMenu()"></i>
+          <li><a href="https://engeniusam.github.io/Eduford-University-Website/index.html" onclick="hideMenu()">HOME</a></li>
+          <li><a href="https://engeniusam.github.io/Eduford-University-Website/about.html" onclick="hideMenu()">ABOUT</a></li>
+          <li><a href="https://engeniusam.github.io/Eduford-University-Website/courses.html" onclick="hideMenu()">COURSE</a></li>
+          <li><a href="https://engeniusam.github.io/Eduford-University-Website/blog.html" onclick="hideMenu()">BLOG</a></li>
+          <li><a href="https://engeniusam.github.io/Eduford-University-Website/contact.html" onclick="hideMenu()">CONTACT</a></li>
+        </ul>
+      </nav>
+      <i class="bx bx-menu" onclick="showMenu()"></i>
+    </div>
+    <div class="intro">
+      <h1>World's Biggest University</h1>
+      <p>Making website is now one of the easiest thing in the world.You neeed to learn HTML, CSS, <br>Javascript and you are good to go.</p>
+      <button class="hero_btn">Visit Us to Know More</button>
+    </div>
+  </section>
+  <!--Courses-->
+  <section id="courses">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <div class="wrapper2">
+<div class="courses_col">
+  <h3>Intermediate</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur dolore tenetur reiciendis, numquam natus magnam beatae cupiditate alias sequi.</p>
+</div>
+<div class="courses_col">
+  <h3>Degree</h3>
+  <p>Deleniti blanditiis velit aperiam, doloremque amet illum explicabo voluptates quasi veritatis fugit, animi libero asperiores temporibus omnis? Ut, alias unde.</p>
+</div>
+<div class="courses_col">
+  <h3>Post Graduation</h3>
+  <p>Quod dicta, sapiente ab ut voluptates odit ipsum eos earum modi nihil sunt soluta! Explicabo omnis sunt quam dolor hic?</p>
+</div>
+    </div>
+  </section>
+
+  <!--Campus section-->
+<section id="campus">
+  <h3>Our Global Campus</h3>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+  <div class="wrapper3">
+    <div class="campus_col">
+      <img src="./backgrond.111_files/london.png" alt="london image">
+      <div class="layer">
+        <h3>LONDON</h3>
+      </div>
+    </div>
+      <div class="campus_col">
+        <img src="./backgrond.111_files/newyork.png" alt="newyork image">
+        <div class="layer">
+          <h3>NEWYORK</h3>
+        </div>
+      </div>
+        <div class="campus_col">
+          <img src="./backgrond.111_files/washington.png" alt="washington image">
+          <div class="layer">
+            <h3>WASHINGTON</h3>
+          </div>
+        </div>
+    </div>
+  </section>
+ <!--Section Facilities-->
+ <section id="fac">
+   <h1>Our Facilities</h1>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+   <div class="wrapper4">
+     <div class="fac_col">
+       <img src="./backgrond.111_files/library.png" alt="library image">
+       <h3>World Class Library</h3>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam eaque nisi cumque rem, explicabo tempore!</p>
+     </div>
+     <div class="fac_col">
+       <img src="./backgrond.111_files/basketball.png" alt="basketball image">
+       <h3>Largest Play Ground</h3>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt aliquid ratione temporibus architecto a maxime?</p>
+     </div>
+     <div class="fac_col">
+       <img src="./backgrond.111_files/cafeteria.png" alt="cafeteria.png">
+       <h3>Tasty and Healthy Food</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deleniti accusamus voluptas possimus aliquam facilis?</p>
+     </div>
+   </div>
+ </section>
+<!--Testimonials section-->
+<section id="test">
+  <h1>What Our Student Says </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eaque officia cum, expedita amet deleniti nesciunt optio ratione, architecto pariatur a. Quia enim minima odio.</p>
+    <div class="wrapper5">
+      <div class="test_col">
+        <img src="./backgrond.111_files/user1.jpg" alt="user image">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nobis eligendi voluptates quas dolorum sunt enim repellendus, reprehenderit aliquid. Totam a</p>
+            <h3 style="margin-bottom:20px;">Brenda Cherotich</h3>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+      </div>
+      <div class="test_col">
+        <img src="./backgrond.111_files/user2.jpg" alt="user2 image">
+        <div>
+          <p>
+            Eligendi tempora aliquam totam numquam eius illo accusamus, officia quidem dicta animi ullam natus magni impedit doloremque sapiente in quaerat p</p>
+            <h3 style="margin-bottom:20px">Samuel Macharia</h3>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+
+        </div>
+        </div>
+    </div>
+</section>
+<!--Call To Action-->
+<section id="cta">
+  <div class="wrapper6">
+ <h2>Enroll For Our Various Online Courses Anywhere From The World</h2>
+  <button class="hero_btn">Contact Us</button>
+  </div>
+</section>
+<!--Footer-->
+<section id="about_us">
+  <div class="custom-shape-divider-bottom-1619278637">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+</div>
+  <div class="wrapper7">
+<h1>About Us</h1>
+<p>For More Info Contact Us Via Our Social Media Accouts.</p>
+<br>
+<hr>
+<br>
+<div class="acc">
+<i class="bx bxl-facebook-circle"></i>
+<i class="bx bxl-instagram"></i>
+<i class="bx bxl-twitter"></i>
+<i class="bx bxl-linkedin-square"></i>
+<i class="bx bxl-youtube"></i>
+
+</div>
+</div>
+
+</section>
+<!--Tribute-->
+<div class="container">
+  <div class="copy">Copyright @ 2022</div>
+  <div class="designer" style="font-weight:900">Eduford Official Website</div>
+  <div class="app">Design by <em style="color:greenyellow;">Muchiri Samuel Macharia</em></div>
+</div>
+<div class="loader-wrapper" style="display: none;"><span class="loader"><span class="loader-inner"></span></span></div>
+  <script src="./backgrond.111_files/script.js.download"></script>
+
+</body></html>
